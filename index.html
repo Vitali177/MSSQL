@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MSSQL</title>
+</head>
+<body>
+  <form action="#">
+    <h2>Выберите запрос</h2>
+     <p><input name="request" type="radio">GET api/pulpits</p>
+     <p><input name="request" type="radio">POST api/pulpits</p>
+     <p><input name="request" type="radio">PUT api/pulpits</p>
+     <p><input name="request" type="radio">DELETE api/pulpits/xyz <span>(где xyz - ключ, который надо ввести ниже)</span></p>
+     <textarea class="data" placeholder="Введите данные в json формате, если они требуются"></textarea>
+     <input type="submit" value="Выполнить" class="button-submit">
+   </form> 
+   <h3>Ответ будет здесь:</h3>
+  <textarea name="result" class="result"></textarea>
+  <style>
+    body {
+      margin-left: 30px;
+    }
+
+    textarea {
+      display: block;
+      width: 40%;
+      height: 100px;
+      margin-bottom: 20px;
+    }
+    
+    form {
+      margin-bottom: 75px;
+    }
+
+    p span {
+      margin-left: 20px;
+    }
+  </style>
+  <script src="./client.js"></script>
+</body>
+</html>
